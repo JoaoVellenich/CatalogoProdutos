@@ -8,7 +8,7 @@ const addProduct = async (req, res, next) => {
     try {
         const data = req.body;
         await firestore.collection('product').doc().set(data);
-        res.send('Record save');
+        res.status(200).send('Record save');
     } catch (error) {
         res.status(400).send(error.message)
     }
