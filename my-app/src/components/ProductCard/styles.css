@@ -1,0 +1,31 @@
+.Containter{
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms ease-in-out;
+}
+
+.Containter:hover{
+    transform: scale(1.01);
+}  
+
+.prodc-name{
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.post-card:hover{
+    transform: scale(1.11);
+}
+  
+.prodc-img{
+    max-width: 100%;
+}
+  
+.prodc-content{
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.Button{
+    width: 50%;
+}

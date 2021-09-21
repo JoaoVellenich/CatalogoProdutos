@@ -16,13 +16,18 @@ function Cadastro () {
             imageUrl
         }
 
-        const response = await api.post('/api/product', data);
+        if(name!=='' && description!=='' && price!=='' && imageUrl!==''){
+            const response = await api.post('/api/product', data);
         
-        if(response.status === 200){
-            window.location.href='/';
+            if(response.status === 200){
+                window.location.href='/';
+            }else{
+                alert('erro ao cadastrar produto');
+            }
         }else{
             alert('erro ao cadastrar produto');
         }
+        
 
     }
 
@@ -33,21 +38,25 @@ function Cadastro () {
 
     return (
         <div className="App">
+          <p>Nome:</p>
           <input 
             type='text' 
             value={name}
             onChange={e => setName(e.target.value)}
           ></input>
+          <p>ImageURL:</p>
           <input 
             type='url'
             value={imageUrl}
             onChange={e => setImageUrl(e.target.value)}
           ></input>
+          <p>Descricao:</p>
           <input 
             type='text'
             value={description}
             onChange={e => setDescription(e.target.value)} 
           ></input>
+          <p>Preco:</p>
           <input 
             type='number'
             value={price}
