@@ -5,5 +5,23 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "firebase": "^9.0.2"
-  }
+  },
+  "name": "catalogoprodutos",
+  "description": "Desenvolvimento de um catalago de produtos utilizando React, NodeJS, firebase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPHV2002/CatalogoProdutos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPHV2002/CatalogoProdutos/issues"
+  },
+  "homepage": "https://github.com/JPHV2002/CatalogoProdutos#readme"
 }
