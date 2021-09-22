@@ -1,16 +1,20 @@
 .Containter{
-    background-color: white;
+    background-color: dimgray;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transition: transform 250ms ease-in-out;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .Containter:hover{
-    transform: scale(1.01);
+    transform: scale(1.03);
 }  
 
 .prodc-name{
     padding: 10px 20px 10px 20px;
     text-align: center;
+    color: white;
+    font-size: 25px;
 }
 
 .post-card:hover{
@@ -24,12 +28,18 @@
 .prodc-content{
     padding: 10px 20px 10px 20px;
     text-align: center;
+    color: white;
 }
 
-.Button{
+.Button-Del{
+    margin: 0;
+    height: 40px;
     width: 50%;
+    border-end-start-radius: 10px;
 }
 
-.View-Button{
-    width: 100%;
+.Button-Edit{
+    height: 40px;
+    width: 50%;
+    border-end-end-radius: 10px;
 }

@@ -66,8 +66,7 @@ export const ProductInput = () => {
             value={price}
             onChange={e => setPrice(e.target.value)} 
           ></input><br/>
-          <button onClick={handleSubmit}>Subbmit</button>
-          <button><a href='/'>Home</a></button>
+          <button onClick={handleSubmit} className='submitButton'>Subbmit</button>
         </div>
     );    
 }

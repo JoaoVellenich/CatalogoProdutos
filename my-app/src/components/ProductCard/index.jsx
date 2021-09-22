@@ -14,12 +14,11 @@ export const ProductCard = ({name, image, id, price, description}) =>{
             <h3 className='prodc-name'>{name}</h3>
             <image src='#' alt={name} className='prodc-img'></image>
             <div className='prodc-content'>
-                <p className='Price'>{price}</p>
+                <p className='Price'>R$: {price}</p>
                 <p className='Description'>{description}</p>
             </div>
-            <button onClick={handleDelete} className='Button'>Delete</button>
-            <button  className='Button'>Edit</button>
-            <button className='View-Button'>View</button>
+            <button onClick={handleDelete} className='Button-Del'>Delete</button>
+            <button  className='Button-Edit'>Edit</button>
         </div>
     );
 }

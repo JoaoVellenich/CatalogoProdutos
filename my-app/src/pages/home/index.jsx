@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import api from '../../services/api'
 import { ProductList } from "../../components/ProductList";
+import { InputCard } from "../../components/InputCard";
+
+import './styles.css'
 
 function Home () {
 
@@ -15,8 +18,10 @@ function Home () {
   }, []);
   
   return(
-    <>
-      <button><a href='/cadastro'>Cadastrar</a></button>
+    <div className='container'>
+
+      <h1 className='titulo'>Produtos CRUD</h1>
+
       {product.length > 0 && (
         <ProductList product={product}/>
       )}
@@ -24,7 +29,10 @@ function Home () {
       {product.length === 0 && (
         <h1>NO PRODUCT</h1>
       )} 
-    </> 
+
+        <InputCard/>
+
+    </div> 
   )
 }
 
