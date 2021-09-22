@@ -1,6 +1,5 @@
 .Container{
-    min-height: 242px;
-    max-height: 242px;
+    
     background-color: dimgray;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transition: transform 250ms ease-in-out;
@@ -8,13 +7,18 @@
     border-radius: 10px;
 }
 
+.Container:hover{
+    transform: scale(1.03);
+}
+
 .Input{
     width: 93%;
-    margin: 2px;
     border-radius: 10px;
     text-align: center;
-    padding: 5px;
+    font-size: 20px;
     color: black;
+    padding: 10px 5px;
+    margin: 10px 0px
 }
 
 h1{
@@ -26,10 +30,13 @@ h1{
 }
 
 .submitButton{
-    
     margin-top: 10px;
     width: 100%;
     height: 40px;
     border-end-start-radius: 10px;
     border-end-end-radius: 10px;
+}
+
+.inputDiv{
+    text-align: center;
 }

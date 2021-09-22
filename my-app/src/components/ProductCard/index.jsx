@@ -22,7 +22,7 @@ export const ProductCard = ({name, image, id, price, description}) =>{
                 price:newPrice, 
                 imageUrl:newImageUrl
             }
-    
+
             api.put('/api/product/'+id, data);
             window.location.href='/';
         }
@@ -31,7 +31,9 @@ export const ProductCard = ({name, image, id, price, description}) =>{
     return (
         <div className='Containter'>
             <h3 className='prodc-name'>{name}</h3>
-            <image src='#' alt={name} className='prodc-img'></image>
+            <div className='imageContainer'>
+                <img src={image} alt='' className='image'/>
+            </div>
             <div className='prodc-content'>
                 <p className='Price'>R$: {price}</p>
                 <p className='Description'>{description}</p>

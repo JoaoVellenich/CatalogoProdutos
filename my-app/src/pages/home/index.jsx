@@ -32,6 +32,7 @@ function Home () {
 
         <InputCard/>
 
+
     </div> 
   )
 }
