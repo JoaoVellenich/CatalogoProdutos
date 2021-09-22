@@ -1,0 +1,21 @@
+.Container{
+    width: 500px;
+    min-height: 560px;    
+    margin: 0px auto;
+    position: relative;   
+}
+
+h1{
+    font-size: 48px;
+    color: black;
+    padding: 2px 0 10px 0;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.Input{
+    margin: 10px;
+    align-self: auto;
+}
