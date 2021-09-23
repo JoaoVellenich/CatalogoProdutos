@@ -32,7 +32,7 @@ export const ProductInput = () => {
     }
 
     return (
-        <div className="Container">
+        <div className="Container" >
           <h1>Cadastrar Produto</h1>
           <div className='inputDiv'>
             <input 
@@ -61,7 +61,7 @@ export const ProductInput = () => {
             ></input><br/>
             <input 
               id='Price-input'
-              placeholder='price'
+              placeholder='Preco'
              className='Input'
               type='number'
               value={price}
