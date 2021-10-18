@@ -27,7 +27,7 @@ function Home () {
       )}
 
       {product.length === 0 && (
-        <h1>NO PRODUCT</h1>
+        <h1 className='noProduct'>NO PRODUCT</h1>
       )} 
 
         <InputCard/>
